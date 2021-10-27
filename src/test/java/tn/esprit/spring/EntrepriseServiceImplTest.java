@@ -28,7 +28,7 @@ public class EntrepriseServiceImplTest {
         int id=entrepriseService.ajouterEntreprise(new Entreprise("THE FIVE","Vente"));
 
         Entreprise entreprise = entrepriseService.deleteEntrepriseById(id);
-
+assertNotNull(entreprise);
         if (entrepriseService.getEntrepriseById(entreprise.getId())==null)
             l.info("Entreprise deleted successfully");
         else
@@ -40,7 +40,7 @@ public class EntrepriseServiceImplTest {
         int idEntreprise=entrepriseService.ajouterEntreprise(new Entreprise("THE FIVE","Vente"));
         int idDepartement=entrepriseService.ajouterDepartement(new Departement("D1"));
         entrepriseService.affecterDepartementAEntreprise(idDepartement,idEntreprise);
-
+assertNotNull(idDepartement);
         if (entrepriseService.getDepartementAtEntreprise(idDepartement,idEntreprise))
             l.info("Department Affected Successfully");
         else
