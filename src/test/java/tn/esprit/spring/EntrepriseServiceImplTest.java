@@ -21,7 +21,7 @@ public class EntrepriseServiceImplTest {
     @Autowired
     EntrepriseServiceImpl entrepriseService;
 
-    private static final Logger l = LogManager.getLogger(TimesheetServiceImplTest.class);
+    private static final Logger l = LogManager.getLogger(EntrepriseServiceImplTest.class);
 
     @Test
     public void testDeleteEntreprise(){
