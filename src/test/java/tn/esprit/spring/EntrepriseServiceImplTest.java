@@ -18,6 +18,7 @@ import static junit.framework.TestCase.assertNotNull;
 public class EntrepriseServiceImplTest {
 
 
+
     @Autowired
     EntrepriseServiceImpl entrepriseService;
 
