@@ -3,6 +3,5 @@ ARG DEFAULT_PATH=target/Timesheet-spring-boot-core-data-jpa-mvc-REST-1-0.0.1-SNA
 WORKDIR /
 ENV WAR_PATH=$DEFAULT_PATH
 COPY ${WAR_PATH} app.war
-RUN mvn clean install
-CMD mvn spring-boot:run
+EXPOSE 8080
 
