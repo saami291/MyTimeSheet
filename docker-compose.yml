@@ -6,7 +6,7 @@ services:
     image: mysql:latest
     #    platform: linux/amd64 # uncomment this if using Apple silicon
     hostname: mysql
-    restart: always
+    restart: on-faiure
     environment:
       MYSQL_ROOT_PASSWORD: 
       MYSQL_DATABASE: timeSheetDevOps
