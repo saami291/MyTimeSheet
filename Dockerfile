@@ -5,3 +5,4 @@ ENV WAR_PATH=$DEFAULT_PATH
 COPY ${WAR_PATH} app.war
 RUN mvn clean install
 CMD mvn spring-boot:run
+
